@@ -1,9 +1,21 @@
 #Ler 7 datas de nascimento e retornar quais são maiores de idade
-import datetime
+from datetime import date
 
-today = datetime.datetime.today()
-ano = today.year
+today = date.today()
+ano_atual = today.year
+contador = 0
+cont_menor = 0
 
-date = datetime(input("Insira sua data de nascimento: "))
 
-print(date)
+for c in range (1, 7+1):
+    data_nasc = int (input("Digite o ano de nascimento: "))
+    idade = ano_atual - data_nasc
+    print("==>"*11)    
+    if idade >=18:
+        contador = contador + 1
+    else:
+        cont_menor = cont_menor + 1
+print(f"Você tem {contador} pessoas maiores de idade!")
+print(f"Você tem {contador} pessoas menores de idade!")
+    
+
