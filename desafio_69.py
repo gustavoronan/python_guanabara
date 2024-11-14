@@ -1,0 +1,2 @@
+#Um programa que leia a idade e o sexo de varias pessoas, a cada pessoa cadastrada o computador pergunte se deseja parar ou nao
+#deve retornar: Quantas pessoas tem mais de 18 anos, Quantos homens foram cadastrados, Quantas mulheres tem menos de 20 anos
